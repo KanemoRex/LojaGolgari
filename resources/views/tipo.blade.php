@@ -82,13 +82,6 @@
         tr:nth-child(even) {
             background-color: #ffffff;
         }
-        .chart-container {
-            background-color: #fff; /* Cor de fundo branco */
-            padding: 20px; /* Espaçamento ao redor do gráfico */
-            border-radius: 8px; /* Bordas arredondadas */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-            margin-top: 20px; /* Espaçamento acima do contêiner */
-        }
         h1 {
             color: #fff; /* Cor do texto do <h1> alterada para branco */
             font-size: 3rem; /* Aumenta o tamanho do texto do <h1> */
@@ -131,15 +124,6 @@
                 <td>Itens feitos para a manipulação da magia e da lógica, com pequenos toques de estranheza aqui e ali que auxiliam o conjurador a projetar feitiços poderosos.</td>
             </tr>
         </table>
-        
-        <!-- Gráfico dos tipos de itens mais vendidos com fundo branco -->
-        <div class="chart-container">
-            <div id="chart">{!! $chart->container() !!}</div>
-        </div>
-        
     </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    {!! $chart->script() !!}
 </body>
 </html>

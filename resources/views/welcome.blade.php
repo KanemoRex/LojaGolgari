@@ -45,7 +45,7 @@
             height: 500px; /* Ajuste a altura do GIF conforme necessário */
             object-fit: cover; /* Ajusta o conteúdo do GIF para cobrir o elemento */
             display: block;
-            margin-top: 80px; /* Espaçamento para separar da barra de navegação */
+            margin-top: 60px; /* Espaçamento para separar da barra de navegação */
         }
         .container {
             max-width: 1200px;
