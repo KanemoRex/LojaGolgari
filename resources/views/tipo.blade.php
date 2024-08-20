@@ -3,6 +3,8 @@
 <head>
     <!-- Seu cabeçalho aqui -->
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css">
+    <!-- Adicione o CSS do Larapex Charts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/larapex-charts@latest/dist/larapex-charts.min.css">
 </head>
 <body>
     <style>
@@ -124,6 +126,9 @@
                 <td>Itens feitos para a manipulação da magia e da lógica, com pequenos toques de estranheza aqui e ali que auxiliam o conjurador a projetar feitiços poderosos.</td>
             </tr>
         </table>
+
     </div>
+
+  
 </body>
 </html>
