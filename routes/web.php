@@ -1,9 +1,9 @@
 <?php
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
-use App\Http\Controllers\ChartController;
+use App\Http\Controllers\TipoController;
 use App\Http\Controllers\ComparacaoController;
-
 
 // Rota para a página inicial
 Route::view('/', 'welcome')->name('home');
@@ -17,10 +17,6 @@ Route::view('/comparacao', 'comparacao')->name('comparacao.view');
 // Rota para autenticação
 Route::post('/login', [AuthController::class, 'authenticate'])->name('login.authenticate');
 
-// Rota para o gráfico de tipos
-Route::get('/tipo', [ChartController::class, 'tipo'])->name('tipo');
-
-// Rota para exibir a view de comparação
-Route::get('/comparacao', [ComparacaoController::class, 'comparacao'])->name('comparacao');
-
+// Rota para exibir a view de tipo
+Route::get('/tipo', [TipoController::class, 'index']);
 
