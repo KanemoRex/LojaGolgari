@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <!-- Seu cabeçalho aqui -->
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css">
-    <!-- Adicione o CSS do Larapex Charts -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/larapex-charts@latest/dist/larapex-charts.min.css">
+    
 </head>
 <body>
     <style>
         body {
             font-family: 'figtree', sans-serif;
-            color: #fff; /* Alteração da cor do texto */
+            color: #fff;
             margin: 0;
             padding: 0;
-            background-image: url('{{ asset('images/Media2.jpg') }}'); /* Adiciona a imagem de fundo */
-            background-size: cover; /* Cobre toda a área da página */
-            background-position: center; /* Centraliza a imagem */
+            background-image: url('{{ asset('images/Media2.jpg') }}');
+            background-size: cover;
+            background-position: center;
         }
         .container {
             max-width: 1200px;
@@ -85,9 +83,9 @@
             background-color: #ffffff;
         }
         h1 {
-            color: #fff; /* Cor do texto do <h1> alterada para branco */
-            font-size: 3rem; /* Aumenta o tamanho do texto do <h1> */
-            margin-bottom: 20px; /* Espaçamento abaixo do título */
+            color: #fff;
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
     </style>
     
@@ -102,7 +100,12 @@
     
     <div class="container">
         <h1>Tipo dos nossos produtos</h1>
-        
+
+        <!-- Gráfico -->
+        <div>
+        {!! $chart->script() !!}
+        </div>
+
         <!-- Tabela com os tipos dos itens -->
         <table>
             <tr>
@@ -126,9 +129,9 @@
                 <td>Itens feitos para a manipulação da magia e da lógica, com pequenos toques de estranheza aqui e ali que auxiliam o conjurador a projetar feitiços poderosos.</td>
             </tr>
         </table>
-
     </div>
 
-  
+
+
 </body>
 </html>
