@@ -21,7 +21,7 @@ class TipoController extends Controller
         ->setLabels(array_column($tipos, 'tipo'))
         ->setDataset(array_column($tipos, 'quantidade'));
 
-    return view('tipo', compact('chart'));
+    return view('tipo', compact('chart', 'tipos'));
 
     }
 }

@@ -89,7 +89,7 @@
         }
     </style>
     
-    <nav>
+    <nav> 
         <a href="/">Início</a>
         <a href="/artefatos">Artefatos</a>
         <a href="/contato">Contato</a>
@@ -106,12 +106,15 @@
         {!! $chart->script() !!}
         </div>
 
+        
+
         <!-- Tabela com os tipos dos itens -->
         <table>
             <tr>
                 <th>Tipo</th>
                 <th>Descrição</th>
             </tr>
+           
             <tr>
                 <td>Maravilhosos</td>
                 <td>Itens de formatos variados, com propriedades e funções variadas, sem um motivo específico ou propósito claro.</td>
